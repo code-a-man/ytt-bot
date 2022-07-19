@@ -28,7 +28,7 @@ cron.schedule('*/1 * * * *', () => {
 			const newData = response.data.split('\n');
 			const diff = checkDiff(savedData, newData);
 			if (diff.length == 0) return;
-			bot.sendMessage(channelId, `*Yeni Topluluklar*\n\n${diff.join('\n')}\n@YazilimciTopluluklariBot`, { disable_web_page_preview: true, parse_mode: 'Markdown' });
+			bot.sendMessage(channelId, `*Yeni Topluluklar*\n\n${diff.join('\n')}`, { disable_web_page_preview: true, parse_mode: 'Markdown' });
 			await db.set('lastcommit', newData);
 		},
 		).catch(error => {

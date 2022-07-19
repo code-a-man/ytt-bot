@@ -6,7 +6,7 @@
 - Her dakika repoyu kontrol eder, eğer yeni topluluk eklenmişse, ilgili telegram kanalına gönderir.
 
 ## Komutlar
-- /topluluklar: toplulukların listesini gösterir.
+- /topluluklar: Toplulukların listesini gösterir.
 
 ## Katkı
 - Katkıda bulunmak isterseniz, pull request açabilirsiniz.
