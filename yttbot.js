@@ -11,6 +11,10 @@ const db = new QuickDB();
 const url = 'https://raw.githubusercontent.com/eserozvataf/telegram/master/README.md';
 const channelId = '-1001674741850';
 
+bot.onText(/\/start/, (msg) => {
+	const chatId = msg.chat.id;
+	bot.sendMessage(chatId, '*Komutlarım*\n/topluluklar : Toplulukların listesini gösterir.\n[Bildirim Kanalı](https://t.me/ytt_notify)\n[Kaynak Kodum](https://github.com/code-a-man/ytt-bot)', { disable_web_page_preview: true, parse_mode: 'Markdown' });
+});
 
 bot.onText(/\/topluluklar/, async (msg) => {
 	const data = await db.get('lastcommit') || 'HATA';
