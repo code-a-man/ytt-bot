@@ -1,0 +1,23 @@
+{
+  "name": "ytt-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "yttbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "better-sqlite3": "^7.6.2",
+    "dotenv": "^16.0.1",
+    "node-cron": "^3.0.1",
+    "node-telegram-bot-api": "^0.58.0",
+    "quick.db": "^9.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
+  }
+}
